@@ -1,0 +1,19 @@
+<div *ngIf="maestro" class="factura-recibo">
+    <h2>{{maestro.nombreCliente | uppercase}} Detalles</h2>
+    <div><span>Nombre: </span>{{maestro.nombreCliente}}</div>
+    <div><span>Cédula o Ruc: </span>{{maestro.cedulaRuc}}</div>
+    <div><span>Número de Factura: </span>{{maestro.numeroFactura}}</div>
+    <div>
+      <label>Subtotal:
+        <input [(ngModel)]="maestro.subtotal" type="number" placeholder="Valor"/>
+      </label>
+    </div>
+    <div>
+    <label>Total:
+      <input [(ngModel)]="maestro.total" type="number" placeholder="Valor"/>
+    </label>
+  </div>
+</div>
+
+
+   

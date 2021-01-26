@@ -1,0 +1,4 @@
+<div *ngIf="messageService.messages.length" class="factura-recibo">
+    <h3>Mensaje</h3>
+    <div *ngFor='let mesagge of messageService.messages'> {{mesagge}}</div>
+</div>

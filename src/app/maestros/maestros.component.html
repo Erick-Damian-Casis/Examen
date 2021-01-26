@@ -1,0 +1,8 @@
+<h2>Clientes</h2>
+<ul class="maestros">
+    <li  [class.selected]="maestro === selectedMaestro" *ngFor="let maestro of maestros" (click)="onSelect(maestro)">
+        <span class="badge"> {{maestro.cedulaRuc}}</span>{{maestro.nombreCliente}}
+    </li>
+</ul>
+
+<app-detalle [maestro]="selectedMaestro"></app-detalle>
